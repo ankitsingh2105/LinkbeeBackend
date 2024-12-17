@@ -66,7 +66,7 @@ app.use("/user", userRoute);
 // Static file serving
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
-app.use("/", (req, response) => {
+app.get("/", (req, response) => {
     response.send("Your backend is live!!!!");
 })
 app.get("/shit", (req, response) => {
