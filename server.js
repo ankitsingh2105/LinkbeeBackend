@@ -4,7 +4,7 @@ const path = require("path");
 const loginRouter = require("./Routes/loginRoute");
 const signupRouter = require("./Routes/signupRoute");
 const userRoute = require("./Routes/userRoutes");
-const connectToMongoDB = require("./BackEnd/connect");
+const connectToMongoDB = require("./connect");
 const userModel = require("./models/userModel");
 
 const cookieParser = require('cookie-parser');
